@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.LogEvent" table="AppUserLogView">
+        <id name="_id" column="UserLogID" type="string">
+            <generator class="native"/>
+        </id>
+
+        <property name="userId" column="UserID" type="string"/>
+        <property name="typeId" column="LogEventID" type="integer"/>
+        <property name="value" column="LogValue" type="string"/>
+        <property name="results" column="LogResult" type="integer"/>
+    </class>
+</hibernate-mapping>

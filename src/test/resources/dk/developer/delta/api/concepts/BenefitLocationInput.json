@@ -1,0 +1,13 @@
+{
+  "_id": "LocationId",
+  "name": "Matas Aarhus",
+  "latitude": 12.34,
+  "longitude": 56.78,
+  "url": null,
+  "online": false,
+  "street": "Ryesgade 13",
+  "place": "Gågaden",
+  "city": "Aarhus C",
+  "zipCode": "8000",
+  "phone": "+45 12 34 56 78"
+}

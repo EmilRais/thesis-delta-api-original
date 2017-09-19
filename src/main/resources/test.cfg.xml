@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:h2:./target/database</property>
+        <property name="connection.driver_class">org.h2.Driver</property>
+        <property name="connection.username"/>
+        <property name="connection.password"/>
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+
+        <mapping resource="User.hbm.xml"/>
+        <mapping resource="UserSettings.hbm.xml"/>
+        <mapping resource="Subscription.hbm.xml"/>
+        <mapping resource="UserPermission.hbm.xml"/>
+
+        <mapping resource="BenefitClub.hbm.xml"/>
+        <mapping resource="MembershipLevel.hbm.xml"/>
+        <mapping resource="Benefit.hbm.xml"/>
+
+        <mapping resource="IndustryCategory.hbm.xml"/>
+        <mapping resource="InterestCategory.hbm.xml"/>
+        <mapping resource="MoodCategory.hbm.xml"/>
+        <mapping resource="ProductCategory.hbm.xml"/>
+        <mapping resource="WeatherCategory.hbm.xml"/>
+
+        <mapping resource="Configuration.hbm.xml"/>
+        <mapping resource="LogEvent.hbm.xml"/>
+        <mapping resource="Feedback.hbm.xml"/>
+        <mapping resource="BenefitClubRequest.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

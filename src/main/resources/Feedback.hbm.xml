@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.Feedback" table="AppFeedbackView">
+        <id name="_id" column="FeedbackID" type="string">
+            <generator class="native"/>
+        </id>
+
+        <property name="userId" column="UserID" type="string"/>
+        <property name="message" column="FeedbackMessage" type="string"/>
+    </class>
+</hibernate-mapping>

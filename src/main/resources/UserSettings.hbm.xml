@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.UserSettings" table="AppUserSettingBaseView">
+        <id name="_id" column="UserSettingID" type="string">
+            <generator class="native"/>
+        </id>
+
+        <property name="onlyOwnBenefits" column="ShowOnlyMyBenefits" type="boolean"/>
+        <property name="numberOfLocations" column="NumberOfLocations" type="integer"/>
+    </class>
+</hibernate-mapping>

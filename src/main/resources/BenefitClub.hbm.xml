@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.BenefitClub" table="AppBenefitClubView">
+        <id name="_id" column="ProgramID" type="string">
+            <generator class="native"/>
+        </id>
+
+        <property name="name" column="ProgramName" type="string"/>
+        <property name="description" column="LoyaltyProgramDescription" type="string"/>
+        <property name="identification" column="IdentificationGuide" type="string"/>
+        <property name="image" column="ImageName" type="string"/>
+        <property name="organisation" column="ProgramOwnerName" type="string"/>
+        <property name="locationCount" column="LocationCount" type="integer"/>
+    </class>
+</hibernate-mapping>

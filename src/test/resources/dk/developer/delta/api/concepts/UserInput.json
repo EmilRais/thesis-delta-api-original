@@ -1,0 +1,27 @@
+{
+  "userId": "thom123",
+  "name": "Thomas Moore",
+  "firstName": "Thomas",
+  "lastName": "Moore",
+  "email": "thomas@mail.com",
+  "gender": "Male",
+  "location": "Aalborg, Danmark",
+  "locale": "da_DK",
+  "ageRange": "{ \"min\": 21 }",
+  "lastLogin": "2016-01-12 18:00:00.000",
+  "settings": {
+    "onlyOwnBenefits": true,
+    "numberOfLocations": 20,
+    "_id": "NOT-GENERATED-YET"
+  },
+  "subscriptions": [
+    {
+      "userId": "NOT-GENERATED-YET",
+      "benefitClubId": "NOT-GENERATED-YET",
+      "membershipNumber": "1234",
+      "membershipLevel": "1",
+      "date": "2016-01-12 18:00:00.000",
+      "_id": "NOT-GENERATED-YET"
+    }
+  ]
+}

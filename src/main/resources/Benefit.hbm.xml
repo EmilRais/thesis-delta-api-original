@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.Benefit" table="AppBenefitView">
+        <id name="_id" column="ID" type="string">
+            <generator class="native"/>
+        </id>
+
+        <property name="benefitId" column="ProgramBenefitID" type="string"/>
+        <property name="membershipLevelId" column="MembershipLevelID" type="string"/>
+        <property name="description" column="BenefitHeader" type="string"/>
+        <property name="condition" column="BenefitCondition" type="string"/>
+    </class>
+</hibernate-mapping>

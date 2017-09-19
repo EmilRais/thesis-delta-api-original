@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.MembershipLevel" table="AppMembershipLevelView">
+        <id name="_id" column="MembershipLevelID" type="string">
+            <generator class="native"/>
+        </id>
+
+        <property name="benefitClubId" column="ProgramID" type="string"/>
+        <property name="name" column="MembershipLevelName" type="string"/>
+        <property name="condition" column="MembershipLevelCondition" type="string"/>
+        <property name="sortKey" column="LevelSortOrder" type="integer"/>
+        <property name="image" column="ImageName" type="string"/>
+    </class>
+</hibernate-mapping>

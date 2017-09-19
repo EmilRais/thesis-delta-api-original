@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.UserPermission" table="AppUserPermissionView">
+        <id name="_id" column="UserPermissionID" type="string">
+            <generator class="native"/>
+        </id>
+
+        <property name="facebookUserId" column="UserFacebookID" type="string"/>
+        <property name="permissionId" column="PermissionID" type="integer"/>
+        <property name="date" column="PermissionGivenDate" type="string"/>
+        <property name="allowed" column="PermissionGivenFlag" type="boolean"/>
+    </class>
+</hibernate-mapping>

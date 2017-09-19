@@ -1,0 +1,8 @@
+{
+  "appVersion": "1.0",
+  "defaultOnlyOwnBenefits": false,
+  "defaultNumberOfLocations": 20,
+  "elasticSearchUrl": "http://DB1SERVER.cloudapp.net:9200/appbenefits/_search",
+  "termsAndConditions": "Accepterer du?",
+  "_id": "NOT-GENERATED-YET"
+}

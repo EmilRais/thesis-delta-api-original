@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.Configuration" table="AppConfigurationView">
+        <id name="_id" column="AppConfigurationID" type="string">
+            <generator class="native"/>
+        </id>
+        
+        <property name="appVersion" column="LatestAppVersion" type="string"/>
+        <property name="defaultOnlyOwnBenefits" column="DefaultShowOnlyMyBenefits" type="boolean"/>
+        <property name="defaultNumberOfLocations" column="DefaultNumberOfLocations" type="integer"/>
+        <property name="elasticSearchUrl" column="SearchURL" type="string"/>
+        <property name="termsAndConditions" column="TermsDK1" type="string"/>
+    </class>
+</hibernate-mapping>

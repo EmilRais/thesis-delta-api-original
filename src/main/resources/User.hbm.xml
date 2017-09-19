@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="dk.developer.delta.api.concepts.User" table="AppUserView">
+        <id name="_id" type="string" column="UserID">
+            <generator class="native"/>
+        </id>
+
+        <property name="userId" column="UserFacebookID" type="string"/>
+        <property name="name" column="UserName" type="string"/>
+        <property name="firstName" column="UserFirstName" type="string"/>
+        <property name="lastName" column="UserLastName" type="string"/>
+        <property name="email" column="UserEmail" type="string"/>
+        <property name="genderId" column="UserGenderID" type="int"/>
+        <property name="location" column="UserLocation" type="string"/>
+        <property name="locale" column="UserLocale" type="string"/>
+        <property name="ageRange" column="UserAgeRange" type="string"/>
+        <property name="lastLogin" column="LatestLoginTime" type="string"/>
+
+        <many-to-one name="settings" column="UserSettingID" class="dk.developer.delta.api.concepts.UserSettings"/>
+
+        <set name="subscriptions" inverse="true">
+            <key column="UserID"/>
+            <one-to-many class="dk.developer.delta.api.concepts.Subscription"/>
+        </set>
+    </class>
+</hibernate-mapping>
